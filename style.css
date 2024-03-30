@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+ *{
+    font-family: "Merriweather", serif;
+    padding: 0;
+    margin: 0;
+    background-color: #FAFAFA;
+ }
+/* Header start */
+.header_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}.header_logo h1{
+    font-size: 45px;
+}.header_manu_ul{
+    display: flex;
+    list-style: none;
+}.header_manu ul li a{
+    text-decoration: none;
+    margin: 0 15px;
+    color: #03071e;
+    font-size: 18px;
+}.Features_list{
+    display: flex;
+    padding: 5px 0;
+    flex-direction: column;
+    background: white;
+    height: 120px;
+    justify-content: space-around;
+    list-style: none;
+}.Features_list li{
+    background: white;
+}.Features_list li i a{
+    background-color: white;
+}.fa-clipboard-list{
+    color: #7570F3;
+}.fa-calendar-days{
+    color:#4CA8C9;
+}.fa-bell{
+    color:#EFD256;
+}.fa-bullseye{
+    color:#8B58A8;
+}.header_features{
+    position: relative;
+}.Features_list{
+    position: absolute;
+    top:100%;
+    width: 150px;
+    box-shadow: 1px 5px 10px -2px #0000009c;
+    border-radius: 5px;
+    display:none; 
+}.header_company{
+    position: relative;
+}.Features_list_two{
+    display: flex;
+    padding: 5px 0;
+    flex-direction: column;
+    background: white;
+    height: 70px;
+    justify-content: space-around;
+    list-style: none;
+    position: absolute;
+    top:100%;
+    width:120px;
+    box-shadow: 1px 5px 10px -2px #0000009c;
+    border-radius: 5px;
+    display: none;
+}.Features_list_two li a{
+    color: white;
+}
+.header_login{
+    width: 200px;
+}
+.header_login button{
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+/* Header End */
+/* Section start */
+.sections{
+    display: flex;
+}.section_text{
+    width: 50%;
+    height:700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}.section_photo{
+    width: 50%;
+    height: 700px;
+}.section_photo img{
+    display: block;
+    width: 100%;
+    max-width: 670px;
+    height: 700px;
+}.section_text h1{
+    font-size: 50px;
+    max-width: 330px;
+}.section_text p{
+    width:300px;
+    text-align: justify;
+    padding: 27px 0;
+    font-size: 19px;
+    margin-left: -32px;
+}.section_text button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #03071e;
+    color: white;
+    border: none;
+    width: 200px;
+    margin: 35px 0 68px -137px;
+    transition: .5s;
+    border: 1px solid #03071e;
+}.section_text button:hover{
+    color: #03071e;
+    background-color: white;
+    font-weight: 500;
+}.section_logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}.section_logo img{
+    display: inline-block;
+    width: 130px;
+}
+.toggle{
+    display: none;
+}.header_manu{
+    display: flex;
+}.header_login{
+    margin-left: 100px;
+}.x{
+    font-size: 30px;
+    display: none;
+    
+}
+/* Section End */
+/* Responsive start */
+/* Phone*/
+@media (min-width: 320px) and (max-width: 480px) {
+    nav {
+        display: none;
+    }.header_login{
+        display: none;
+    }.toggle{
+        display: block;
+        font-size: 35px;
+    }.header_manu_ul{
+        display: block;
+    }
+    .header_container{
+        position: relative;
+    }
+    .header_manu {
+        display: block;
+        width: 170px;
+        height: auto;
+        position: absolute;
+        top:-3%;
+    }.Features_list {
+        z-index: 100;
+    }
+    .Features_list {
+        position: static;
+        margin-left: 20px;
+    }.Features_list_two {
+        position: static;
+        margin-left: 20px;
+    }.header_login{
+        margin: 0;
+        padding-bottom: 30px;
+    }.header_login button{
+        margin-bottom: 10px;
+        display:block;
+    }.x{
+        display: block;
+        margin-left: 10px;
+    }.sections {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }.section_photo {
+        width: 100%;
+    }.section_text {
+        width: 100%;
+    }.section_text button {
+        margin: 46px 0px;
+    }.section_text p {
+        text-align: center;
+    }.section_text h1 {
+        text-align: center;
+    }
+  }
+  /* #Device = Tablets, Ipads (portrait */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .header_manu ul li a {
+        font-size: 13px;
+    }
+    
+  }
+/* Responsive End */
